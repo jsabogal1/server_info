@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Api_InfoServer
+</name>
+</assembly>
+<members>
+<member name="M:Api_InfoServer.Metodos.registrarLog(System.String,System.String,System.Int32,System.String,System.Int32)">
+ <summary>
+ Permite Registrar un Log con el mensaje enviado.
+ </summary>
+ <param name="formulario">Fomulario, controlador donde se genera el mensaje</param>
+ <param name="funcion">Funcion que genera el mensaje</param>
+ <param name="numero">Paso</param>
+ <param name="Mensaje">Mensaje a registrar</param>
+ <param name="X">Indica si se genera linea con(*) (0) no, (1) al inicio, (2) al final, (3) inicio y final </param>
+</member>
+<member name="M:Api_InfoServer.Metodos.borrarLog(System.String)">
+ <summary>
+ Funcion que elimina el regstro de archivos en la ruta enviada con mas de 60 dias
+ </summary>
+ <param name="RUTA">Ruta en la cual se eliminaran los archivos</param>
+</member>
+<member name="T:Api_InfoServer.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Api_InfoServer.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:Api_InfoServer.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:Api_InfoServer.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:Api_InfoServer.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:Api_InfoServer.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+</members>
+</doc>
